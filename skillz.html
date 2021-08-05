@@ -1,56 +1,100 @@
 <html>
 	<head>
-		<title>About Me</title>
-		<!-- link to your css here <link rel="stylesheet" href="css/style.css"> -->
+		<title>Skillz</title>
+		<!-- Browser Favicon from Flaticon.com -->
+		<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+		<!-- my stylesheet -->
+		<link rel="stylesheet" href="css/style.css">
+		<!-- Google Fonts -->
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Gowun+Batang&display=swap" rel="stylesheet">
+		<!-- Fontawesome 5 icons for hamburger nav -->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
 	</head>
 	<body>
-		<header class="mainHeader">
-			<div class="siteLogo">
-				<img src="https://lauriewalk3r.github.io/about-me/images/lsp-mad-not.gif" alt="my lsp" class="logoImage">
-				My name is Lumpy Space Princess
+		<header class="siteHeader">
+			<div class="headerContainer">
+				<div class="header-left">
+					<img src="images/anchor.gif" alt="anchor man">
+					L Walker
+				</div>
+				<div class="header-right">
+					<ul>
+						<li>
+							<a href="index.html">Home</a>
+						</li>
+						<li>
+							<a href="#">Work</a>
+						</li>
+						<li>
+							<a href="#">Contact</a>
+						</li>
+						<li>
+							<a href="https://duckduckgo.com/?q=cute+kittens&atb=v208-1&iax=images&ia=images" target="_blank" class="cta">Yes</a>
+						</li>
+					</ul>
+					<a href="#">
+						<i class="fas fa-bars"></i>
+					</a>
+				</div>
 			</div>
-			<nav class="mainNavigation">
-				<div class="mainNavItem"><a href="">Work</a></div>
-				<div class="mainNavItem"><a href="">Contact </a></div>
-				<div class="mainNavItem"><a href="">Oh my glob</a></div>
-			</nav>
-		</header>
+			<div class="hamburger-menu">
+			   <ul>
+				  <li>
+					 <a href="index.html">Home</a>
+				  </li>
+				  <li>
+					 <a href="#">Work</a>
+				  </li>
+				  <li>
+					 <a href="#">Contact</a>
+				  </li>
+				  <li>
+					 <a href="https://duckduckgo.com/?q=cute+kittens&atb=v208-1&iax=images&ia=images" target="_blank" class="cta">Yes</a>
+				  </li>
+			   </ul>
+			   <a href="#" class="close">
+			   	<i class="fas fa-times"></i>
+			   </a>
+			</div>
+		 </header>
 		
-		<section class="content">
+		<section class="mainContent">
 			<h1> My Skills </h1>
-			<div class="mainContent">
+			<div class="skillzContainer">
 				<div class="uxDesignContent">
-					<img src="https://24.media.tumblr.com/tumblr_mdujnog90G1ryn5kxo1_500.gif" alt="Lumpy Space Princess" class="cardImage">
+					<img src="images/science.gif" alt="Lumpy Space Princess" class="cardImage">
 					<h2>User Research</h2>
 					<p>I like pina coladas and getting caught in the...</p>
-					<button>UX Research</button>
+					<a href="#"><button class="primaryButton">UX Research</button></a>
 				</div>
 
 				<div class="uiDesignContent">
-					<img src="https://24.media.tumblr.com/tumblr_mdujnog90G1ryn5kxo1_500.gif" alt="Lumpy Space Princess" class="cardImage">
+					<img src="images/big-deal.gif" alt="Lumpy Space Princess" class="cardImage">
 					<h2>User Interface Design</h2>
 					<p>I like pina coladas and getting caught in the...</p>
-					<button>User Interface Design</button>
+					<a href="#"><button class="primaryButton">User Interface Design</button></a>
 				</div>
 
 				<div class="frontEndContent">
-					<img src="https://24.media.tumblr.com/tumblr_mdujnog90G1ryn5kxo1_500.gif" alt="Lumpy Space Princess" class="cardImage">
+					<img src="images/laughing.gif" alt="Lumpy Space Princess" class="cardImage">
 					<h2>Front End Development</h2>
 					<p>I like pina coladas and getting caught in the...</p>
-					<button>Front End</button>
+					<a href="#"><button class="primaryButton">Front End</button></a>
 				</div>
 			</div>
 		</section>
 		
 		<footer class="footerNavigation">
-			<div class="footerItem">Copyright 2021 LSP</div>
+			<div class="footerItem">&#169; Copyright 2021 Stay Classy</div>
 			<div class="footerItem"><a href="">Work</a></div>
 			<div class="footerItem"><a href="">Contact</a></div>
-			<div class="footerItem"><a href="https://www.nytimes.com/">Oh my glob</a></div>
+			<div class="footerItem"><a href="https://www.nytimes.com/">I like Scotch</a></div>
 		</footer>
-		
+
+		<!-- jQuery and Hamburger Menu JS -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="js/hamburger.js" charset="utf-8"></script>
 	</body>
 </html>

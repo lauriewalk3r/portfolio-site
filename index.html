@@ -1,13 +1,65 @@
 <html>
 	<head>
-		<title>About Me</title>
+		<title>I'm a UX Designer</title>
+		<!-- Browser Favicon from Flaticon.com -->
+		<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+		<!-- my stylesheet -->
 		<link rel="stylesheet" href="css/style.css">
+		<!-- Google Fonts -->
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Gowun+Batang&display=swap" rel="stylesheet">
+		<!-- Fontawesome 5 icons for hamburger nav -->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
 	</head>
 	<body>
-		<header class="mainHeader">
+		<header class="siteHeader">
+			<div class="headerContainer">
+				<div class="header-left">
+					<img src="https://lauriewalk3r.github.io/about-me/images/lsp-mad-not.gif" alt="my lsp" class="logoImage">
+					My name is Lumpy Space Princess
+				</div>
+				<div class="header-right">
+					<ul>
+						<li>
+							<a href="index.html">Home</a>
+						</li>
+						<li>
+							<a href="skillz.html">Work</a>
+						</li>
+						<li>
+							<a href="#">Contact</a>
+						</li>
+						<li>
+							<a href="https://duckduckgo.com/?q=cute+kittens&atb=v208-1&iax=images&ia=images" target="_blank" class="cta">Yes</a>
+						</li>
+					</ul>
+					<a href="#">
+						<i class="fas fa-bars"></i>
+					</a>
+				</div>
+			</div>
+			<div class="hamburger-menu">
+			   <ul>
+				  <li>
+					 <a href="index.html">Home</a>
+				  </li>
+				  <li>
+					 <a href="skillz.html">Work</a>
+				  </li>
+				  <li>
+					 <a href="#">Contact</a>
+				  </li>
+				  <li>
+					 <a href="https://duckduckgo.com/?q=cute+kittens&atb=v208-1&iax=images&ia=images" target="_blank" class="cta">Yes</a>
+				  </li>
+			   </ul>
+			   <a href="#" class="close">
+			   	<i class="fas fa-times"></i>
+			   </a>
+			</div>
+		 </header>
+		<!-- OLD HEADER header class="mainHeader">
 			<div class="siteLogo">
 				<img src="https://lauriewalk3r.github.io/about-me/images/lsp-mad-not.gif" alt="my lsp" class="logoImage">
 				My name is Lumpy Space Princess
@@ -17,14 +69,17 @@
 				<div class="mainNavItem"><a href="">Contact </a></div>
 				<div class="mainNavItem"><a href="">Oh my glob</a></div>
 			</nav>
-		</header>
+		</header -->
 		
 		<section class="mainContent">
-			<div class="aboutMeContent">
-				<img src="https://24.media.tumblr.com/tumblr_mdujnog90G1ryn5kxo1_500.gif" alt="Lumpy Space Princess" class="aboutMePhoto">
-				<h1>Lumpy Space Princess</h1>
-				<h2>(you can call me LSP)</h2>
-				<p>I like pina coladas and getting caught in the...</p>
+			<h1>About Me</h1>
+			<div class="aboutMeContainer">
+				<div class="aboutMeContent">
+					<img src="https://24.media.tumblr.com/tumblr_mdujnog90G1ryn5kxo1_500.gif" alt="Lumpy Space Princess" class="aboutMePhoto">
+					<h2>Lumpy Space Princess</h2>
+					<h3>(you can call me LSP)</h3>
+					<p>I like pina coladas and getting caught in the...</p>
+				</div>
 			</div>
 		</section>
 		
@@ -34,6 +89,9 @@
 			<div class="footerItem"><a href="">Contact</a></div>
 			<div class="footerItem"><a href="https://www.nytimes.com/">Oh my glob</a></div>
 		</footer>
-		
+	
+		<!-- jQuery and Hamburger Menu JS -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="js/hamburger.js" charset="utf-8"></script>
 	</body>
 </html>

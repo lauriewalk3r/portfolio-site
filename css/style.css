@@ -4,7 +4,18 @@ body {
 	font-family: 'Gowun Batang', arial, sans-serif;
 	font-size: 16px;
 }
+h1, h2, h3, h4, h5, h6 {margin: 0;}
+h1 {
+	font-size: 44px;
+	line-height: 1.2;
+}
+h2 {
+	font-size: 32px;
+	line-height: 1.2;
+}
+h3 {font-size: 24px;}
 
+/* header styles */
 .mainHeader {
 	display: flex;
 	justify-content: space-between;
@@ -26,7 +37,7 @@ body {
 	border: 1px solid lightgray;
 	margin: 0 16px 0 0;
 }
-
+/* this is my original nav styles
 .mainNavigation {
 	display: flex;
 	align-items: center;
@@ -43,40 +54,190 @@ body {
 .mainNavItem a:hover {
 	outline: 1px dotted #fff;
 }
+ I'm replacing the nav css with the code below */
 
+.siteHeader {
+	padding: 0 24px;
+    background: darkslategray;
+	font-size: 18px;
+	color: #fff;
+}
+.headerContainer {
+	height: 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.header-left {
+	display: flex;
+	align-items: center; 
+}
+.header-left img {
+	height: 60px;
+	border-radius: 16px;
+	margin-right: 16px;
+}
+/* the class below is what controls the hamburger icon display.
+	It's set to display:none; for desktop view, 
+	display:block; in the media query */
+.header-right > a {
+    display: none;
+}
+.header-right ul {
+    list-style: none;
+    text-align: right;
+}
+.header-right ul li {
+    display: inline-block;
+	margin-left: 32px;
+}
+.header-right ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+.header-right ul li a.cta {
+    padding: 10px 20px;
+    color: white;
+    background: #E78D5C;
+	border-radius: 8px;
+}
+
+.hamburger-menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+    padding: 48px;
+	border-bottom-left-radius: 16px;
+    /*width: 100%;
+    height: 100%;
+    min-width: 100vw;
+    min-height: 100vh;*/
+    background: #2B3F58;
+}
+.hamburger-menu ul {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    list-style: none;
+}
+.hamburger-menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+	padding-bottom: 16px;
+}
+.close {
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    color: white;
+    font-size: 35px;
+    text-decoration: none;
+}
+@media screen and (max-width: 1000px) {
+    .header-right ul {
+        display: none;
+    }
+    .header-right > a {
+        display: block;
+        color: lightgrey;
+        font-size: 20px;
+    }
+
+    .hamburger-menu.active {
+        display: block;
+    }
+}
+/* css for main content area on pages */
 .mainContent {
+	margin: 40px auto;
+}
+.mainContent h1 {
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+/* css for index.html page - this is the about me page */
+.aboutMeContainer {
 	display: flex;
 	justify-content: center;
-	align-items: center;
 }
 
 .aboutMeContent {
-	display: flex;
-	flex-direction: column;
-	margin: 80px 0;
-	width: 30%;
+	width: 33%;
 	padding: 24px;
 	border: 1px dotted teal;
+	border-radius: 8px;
 	/* box shadow values - offset-x | offset-y | blur-radius | spread-radius | rgb color and transparency */
 	box-shadow: -2px 2px 8px 2px rgba(188, 188, 188, .7);
 }
 
 .aboutMeContent h1 {
-	font-size: 40px;
 	margin-bottom: 4px;
-}
-
-.aboutMeContent h2 {
-	font-size: 24px;
-	margin: 0;
+	border: 1px solid red;
 }
 
 .aboutMePhoto {
-	max-width: 200px;
+	width: 240px;
 	height: auto;
 	margin: 0 auto;
 }
 
+/* css for skillz.html page */
+.skillzContainer {
+	display: flex;
+	justify-content: center;
+	align-items: stretch;
+	/*align-content: stretch;*/
+}
+
+.uxDesignContent, .uiDesignContent, .frontEndContent {
+	display: flex;
+	flex-direction: column;
+	margin: 0 16px;
+	width: 33%;
+	padding: 24px;
+	border: 1px dotted teal;
+	border-radius: 8px;
+	/* box shadow values - offset-x | offset-y | blur-radius | spread-radius | rgb color and transparency */
+	box-shadow: -2px 2px 8px 2px rgba(188, 188, 188, .7);
+}
+
+.skillzContainer h2 {
+	margin: 16px 0;
+}
+
+.cardImage {
+	width: 240px;
+	height: auto;
+	margin: 0 auto;
+	border-radius: 8px;
+}
+
+/* Button styles */
+.primaryButton {
+	width: 100%;
+	padding: 8px 16px;
+	background-color: gold;
+	font-size: 16px;
+	font-weight: 400;
+	color: indigo;
+	border: none;
+	border-radius: 8px;
+	cursor: pointer;
+	transition: all .5s ease-out;
+}
+.primaryButton:hover {
+	background-color: indigo;
+	color: gold;
+	font-size: 18px;
+}
+
+/*Footer styles are bleow */
 .footerNavigation {
 	display: flex;
 	align-items: center;
@@ -94,4 +255,11 @@ body {
 .footerItem a:hover {
 	outline: 1px dotted #fff;
 	text-decoration: none;
+}
+
+@media screen and (max-width: 728px) {
+	.skillzContainer {
+		flex-direction: column;
+		align-items: center;
+	}
 }
