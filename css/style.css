@@ -264,6 +264,9 @@ h3 {font-size: 24px;}
 	.uxDesignContent, .uiDesignContent, .frontEndContent {
 		width: 60%;
 	}
+	.aboutMeContent {
+		width: 60%;
+	}
 }
 
 @media screen and (max-width: 600px) {
